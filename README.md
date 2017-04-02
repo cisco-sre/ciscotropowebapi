@@ -1,14 +1,9 @@
-NAME
-    tropo - The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
+# ciscotropowebapi
 
-FILE
-    http://github.com/tropo/python-webapi/blob/master/tropo.py
+This module is for working with the Cisco Tropo Web API cloud communications service at http://www.tropo.com/
 
-DESCRIPTION
-    Usage:
-    
-    ----
-    from tropo import Tropo
+# Description
+    from ciscotropowebapi import Tropo
 
     tropo = Tropo()
     tropo.say("Hello, World")
@@ -31,41 +26,37 @@ DESCRIPTION
                   attempts=3, bargein=True, name="zip", timeout=5, voice="dave")
         ...
 
-NOTE ON PYTHON VERSIONS
 
-    This version of the module is for python 3.x.
-    There is a separate version available for python 2.x at:
-
-	      http://github.com/tropo/python-webapi/
-
-TESTS
+# Tests
 
 	Run testsuite by issuing:
 
 	cd test
 	python test.py
 
-CLASSES
-    Ask
-    Call
-    Choices
-    Conference
-    Hangup
-    Message
-    On
-    Record
-    Redirect
-    Reject
-    Result
-    Say
-    Session
-    StartRecording
-    StopRecording
-    Transfer
-    Tropo
-    unittest.TestCase(__builtin__.object)
-        TestTropoPython
-    
+# Classes
+
+* Ask
+* Call
+* Choices
+* Conference
+* Hangup
+* Message
+* On
+* Record
+* Redirect
+* Reject
+* Result
+* Say
+* Session
+* StartRecording
+* StopRecording
+* Transfer
+* Tropo
+* unittest.TestCase(__builtin__.object)
+* TestTropoPython
+
+# Details of each class
     class Ask
      |  Class representing the "ask" Tropo action. Builds an "ask" JSON object.
      |  Class constructor arg: choices, a Choices object
