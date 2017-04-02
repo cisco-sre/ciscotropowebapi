@@ -34,7 +34,8 @@ The TropoPython module. This module implements a set of classes and methods for 
 	cd test
 	python test.py
 
-CLASSES
+# Classes
+
 * Ask
 * Call
 * Choices
