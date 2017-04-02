@@ -44,19 +44,19 @@ The TropoPython module. This module implements a set of classes and methods for 
 * Message
 * On
 * Record
+* Redirect
+* Reject
+* Result
+* Say
+* Session
+* StartRecording
+* StopRecording
+* Transfer
+* Tropo
+* unittest.TestCase(__builtin__.object)
+* TestTropoPython
 
-    Redirect
-    Reject
-    Result
-    Say
-    Session
-    StartRecording
-    StopRecording
-    Transfer
-    Tropo
-    unittest.TestCase(__builtin__.object)
-        TestTropoPython
-    
+# Details of each class
     class Ask
      |  Class representing the "ask" Tropo action. Builds an "ask" JSON object.
      |  Class constructor arg: choices, a Choices object
