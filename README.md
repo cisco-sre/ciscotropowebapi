@@ -3,9 +3,6 @@
 The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
 
 # Description
-    Usage:
-    
-    ----
     from ciscotropowebapi import Tropo
 
     tropo = Tropo()
