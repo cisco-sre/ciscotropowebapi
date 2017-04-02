@@ -7,7 +7,7 @@ Upon launch, it will trigger a message to be sent via Jabber to the addess speci
 """
 
 from itty import *
-from tropo import Tropo, Session
+from ciscotropowebapi import Tropo, Session
 from urllib import urlencode
 from urllib2 import urlopen
 

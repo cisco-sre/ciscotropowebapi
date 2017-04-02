@@ -7,7 +7,7 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 import cgi
 import logging
-import tropo
+import ciscotropowebapi
 import GoogleS3
 from xml.dom import minidom
 from google.appengine.api import urlfetch
@@ -151,7 +151,7 @@ class TropoDemo(webapp.RequestHandler):
     """
     def post(self):
         if (1):
-            tropo = tropo.Tropo()
+            tropo = ciscotropowebapi.Tropo()
             tropo.say ("Welcome to the Tropo web API demo")
 
             request = "Please press"

@@ -14,13 +14,13 @@ except ImportError:
         except ImportError:
             import json as jsonlib
 
-import unittest 
+import unittest
 import sys
 sys.path = ['..'] + sys.path
-from tropo import Choices, Say, Tropo
+from ciscotropowebapi import Choices, Say, Tropo
 
 
-class TestTropoPython(unittest.TestCase):        
+class TestTropoPython(unittest.TestCase):
     """
     Class implementing a set of unit tests for TropoPython.
     """
@@ -130,7 +130,7 @@ class TestTropoPython(unittest.TestCase):
 
         tropo = Tropo()
 
-        tropo.on(event="continue", 
+        tropo.on(event="continue",
              next="/weather.py?uri=end",
              say="Please hold.")
         rendered = tropo.RenderJson()
@@ -152,7 +152,7 @@ class TestTropoPython(unittest.TestCase):
         tropo = Tropo()
         url = "/receive_recording.py"
         choices_obj = Choices("", terminator="#").json
-        tropo.record(say="Tell us about yourself", url=url, 
+        tropo.record(say="Tell us about yourself", url=url,
                      choices=choices_obj)
         rendered = tropo.RenderJson()
         pretty_rendered = tropo.RenderJson(pretty=True)
@@ -317,12 +317,12 @@ if __name__ == '__main__':
         tropo.conference(ID)
         tropo.hangup()
         tropo.message ("Hello, World", TO)
-        tropo.on(event="continue", 
+        tropo.on(event="continue",
              next="http://example.com/weather.py",
              say="Please hold.")
 
-        tropo.record(say="Please say something for posterity", 
-                     url=URL, 
+        tropo.record(say="Please say something for posterity",
+                     url=URL,
                      choices = Choices("", terminator="#").json)
         tropo.redirect(ID)
         tropo.reject(ID)
@@ -331,8 +331,8 @@ if __name__ == '__main__':
         tropo.transfer(TO)
 
         tropo.message("Hello, World",
-                      TO, 
-                      channel='TEXT', 
+                      TO,
+                      channel='TEXT',
                       network='SMS')
 
     else:
