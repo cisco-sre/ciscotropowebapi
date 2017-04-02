@@ -35,14 +35,15 @@ The TropoPython module. This module implements a set of classes and methods for 
 	python test.py
 
 CLASSES
-    Ask
-    Call
-    Choices
-    Conference
-    Hangup
-    Message
-    On
-    Record
+* Ask
+* Call
+* Choices
+* Conference
+* Hangup
+* Message
+* On
+* Record
+
     Redirect
     Reject
     Result
