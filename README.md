@@ -1,6 +1,6 @@
 # ciscotropowebapi
 
-The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
+This module is for working with the Cisco Tropo Web API cloud communications service at http://www.tropo.com/
 
 # Description
     from ciscotropowebapi import Tropo
