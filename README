@@ -1,5 +1,5 @@
 NAME
-    tropo - The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
+    ciscotropowebapi - The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
 
 FILE
     http://github.com/tropo/python-webapi/blob/master/tropo.py
@@ -8,7 +8,7 @@ DESCRIPTION
     Usage:
     
     ----
-    from tropo import Tropo
+    from ciscotropowebapi import Tropo
 
     tropo = Tropo()
     tropo.say("Hello, World")
@@ -31,12 +31,6 @@ DESCRIPTION
                   attempts=3, bargein=True, name="zip", timeout=5, voice="dave")
         ...
 
-NOTE ON PYTHON VERSIONS
-
-    This version of the module is for python 3.x.
-    There is a separate version available for python 2.x at:
-
-	      http://github.com/tropo/python-webapi/
 
 TESTS
 
