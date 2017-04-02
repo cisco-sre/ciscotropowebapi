@@ -1,10 +1,8 @@
-NAME
-    ciscotropowebapi - The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
+# ciscotropowebapi
 
-FILE
-    http://github.com/tropo/python-webapi/blob/master/tropo.py
+The TropoPython module. This module implements a set of classes and methods for manipulating the Voxeo Tropo WebAPI for the Tropo cloud communications service at http://www.tropo.com/
 
-DESCRIPTION
+# Description
     Usage:
     
     ----
@@ -32,7 +30,7 @@ DESCRIPTION
         ...
 
 
-TESTS
+# Tests
 
 	Run testsuite by issuing:
 
