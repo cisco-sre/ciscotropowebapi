@@ -46,6 +46,8 @@ except ImportError:
 
 import logging
 
+import keyword
+
 
 class TropoAction(object):
     """
@@ -493,6 +495,10 @@ class Session(object):
         for key in session_dict:
             val = session_dict[key]
             logging.info ("key: %s val: %s" % (key, val))
+            if key in keyword.kwlist:
+                key = key + '_'
+                logging.info ("changed key: %s val: %s" % (key, val))
+
             setattr(self, key, val)
 
 
