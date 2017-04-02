@@ -130,7 +130,6 @@ class Call(TropoAction):
                 else:
                     self._dict[opt] = options[opt]
 
-                
 
 class Choices(TropoAction):
     """
@@ -434,7 +433,7 @@ class Transfer(TropoAction):
         # # **Wed May 18 21:14:05 2011** -- egilchri
         "headers": Object,
         # # **Wed May 18 21:14:05 2011** -- egilchri
-        
+
         "from": String,
         "name": String,
         "required": Boolean,
@@ -515,7 +514,7 @@ class Session(object):
     """
     Session is the payload sent as an HTTP POST to your web application when a new session arrives.
     (See https://www.tropo.com/docs/webapi/session.htm)
-    
+
     Because 'from' is a reserved word in Python, the session object's 'from' property is called
     fromaddress in the Python library
     """
